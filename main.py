@@ -64,7 +64,6 @@ def find_api_key(code:str):
 
 @bot.listen()
 async def on_message(message:nextcord.Message):
-    print(message.content)
     if '```' in message.content:
         leaked = find_api_key(message.content)
         if leaked != False:
@@ -85,7 +84,6 @@ async def on_message(message:nextcord.Message):
 
 @bot.listen()
 async def on_message(message: nextcord.Message):
-    print(message.content)
     if message.channel.id in ids.values() and message.author.id != 715325435185201283:
         for word in keyword:
             if word in message.content.lower():
