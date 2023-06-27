@@ -14,7 +14,6 @@ keyword = ['me ajuda', 'em ajuda', 'preciso de ajuda com', 'me dá um help', 'pr
 langs = ['python', 'javascript', 'js', 'java', 'c#', 'csharp', 'c++', 'assembly', 'cobol', 'html', 'css','ruby', 'php', 'sql', 'rust', 'go', 'perl', 'dart', 'delphi','lua', 'swift', ' c ',]
 linguagem = None
 
-import openai
 
 async def send_message_in_error_channel(message:object):
     """
